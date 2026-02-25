@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llj"
+version = "0.1.0"
+description = "Publication-ready LLJ diagnostics: reproducible scripts with config + logging."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Emanuele Silvio Gentile"}]
+dependencies = [
+  "numpy",
+  "xarray",
+  "pandas",
+  "matplotlib",
+  "scipy",
+  "netCDF4",
+  "pyyaml",
+]
+
+[project.scripts]
+llj-run = "llj.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["llj"]

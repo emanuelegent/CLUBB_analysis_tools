@@ -1,0 +1,12 @@
+name: llj
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy
+  - xarray
+  - pandas
+  - matplotlib
+  - scipy
+  - netcdf4
+  - pyyaml

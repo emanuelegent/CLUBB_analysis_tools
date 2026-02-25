@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it."
+title: "LLJ diagnostics scripts"
+authors:
+  - family-names: "Gentile"
+    given-names: "Emanuele Silvio"
+license: MIT
+version: "0.1.0"
+date-released: "2026-02-25"

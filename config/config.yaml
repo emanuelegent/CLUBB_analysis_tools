@@ -1,0 +1,23 @@
+# LLJ reproducible configuration
+paths:
+  # Replace these with your local data directories / files
+  ctrl: "your/file/path"
+  dm: "your/file/path"
+  dm_tau: "your/file/path"
+  pm_only: "your/file/path"
+  pm_tau: "your/file/path"
+
+logging:
+  version: 1
+  disable_existing_loggers: false
+  formatters:
+    standard:
+      format: "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: standard
+      level: INFO
+  root:
+    handlers: [console]
+    level: INFO
